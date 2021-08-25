@@ -1,0 +1,184 @@
+Test funkcionalonosti korisničke podrške:
+
+TP1:  Uspešna upotreba korisničke podrške
+Preduslov: Korisnik je ulogovan i popunio je formu za poruku administraciji.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik u okviru hedera pritiska polje "Podrška".
+VT:	4. Sistem prelazi na stranicu za Podršku sa mogućnostima podrške.
+	5. Korisnik pritiska jedno od ponuđenih formi.
+VT:	6. Sistem prelazi na stranicu sa formom za popunjavanje poruke za administraciju.
+	7. Korisnik popunjava formu.
+	8. Korisnik pritiska dugme "Prosledi."
+VT:	8. Sistem izbacuje podruku "Hvala na podršci!".	
+
+
+TP2:  Neuspešna upotreba korisničke podrške zbog prazne forme
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik u okviru hedera pritiska polje "Podrška".
+VT:	4. Sistem prelazi na stranicu za Podršku sa mogućnostima podrške.
+	5. Korisnik pritiska jedno od ponuđenih formi.
+VT:	6. Sistem prelazi na stranicu sa formom za popunjavanje poruke za administraciju.
+	7. Korisnik pritiska dugme "Prosledi."
+	8. Sistem prikazuje poruku da je polje prazno.
+
+TP3:  Neuspešna upotreba korisničke podrške - Gost
+
+	1. Gost koji nije ulogovan pokušava je ne početnoj stranici.
+	2. Gost pritiska polje "Podrška" u hederu.
+VT:	3. Sistem prosleđuje gosta na stanicu za logovanje.
+
+
+
+Test funkcionalonosti kačenja obaveštenja:
+
+TP1: Administrator uspešno postavlja novo obaveštenje na sistem.
+Preduslov: Administrator je ulogovan na sistem.
+
+	1. Administrator se uspešno loguje sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu administratora.
+	3. Administrator pritiska polje "Postavi obaveštenje".
+VT:	4. Sistem prelazi na stranicu sa poljima za popunjavanje novog obaveštenja.
+	5. Administrator popunjava polja za naslov i za opis.
+	6. Administrator pritiska dugme "Potvrdi" čime je novo obaveštenje postavljeno na ssistem.
+
+
+TP2: Administrator neuspešno postavlja novo obaveštenje zbog nepopunjenih polja
+
+	1. Administrator se uspešno loguje sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu administratora.
+	3. Administrator pritiska polje "Postavi obaveštenje".
+VT:	4. Sistem prelazi na stranicu sa poljima za popunjavanje novog obaveštenja.
+	5. Administrator pritiska dugme "Potvrdi".
+	6. Sistem izbacuje poruku da jedno o polja nije popunjeno.
+
+
+
+
+Test funkcionalonosti brisanja oglasa:
+
+TP1: Korisnik uspešno briše svoj oglas
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Korisnik je ulogovan na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za registrovan korisnika.
+	3. Korisnik prelazi na svoj profil.
+	4. Korisnik pritiska polje "Svi aktivni oglasi".
+	5. Sistem izlistava oglase korisnika.
+	6. Korisnik bira jedan od oglasa.
+	7. Korisnik pritiska dugme "Obriši oglas".
+VT:	8. Sistem prikazuje prozor sa pitanjem za korisnika da li zaista želi da obriše oglas.
+	9. Korisnik pritiska dugme "Obriši".
+VT:	10. Sistem prikazuje poruku "Uspešno ste obrisali oglas!" čime je oglas izbrisan.
+
+
+TP2: Korisnik uspešno odustaje od brisanja svog oglasa
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Korisnik je ulogovan na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za registrovan korisnika.
+	3. Korisnik prelazi na svoj profil.
+	4. Korisnik pritiska polje "Svi aktivni oglasi".
+	5. Sistem izlistava oglase korisnika.
+	6. Korisnik bira jedan od oglasa.
+	7. Korisnik pritiska dugme "Obriši oglas".
+VT:	8. Sistem prikazuje prozor sa pitanjem za korisnika da li zaista želi da obriše oglas.
+	9. Korisnik pritiska dugme "Nazad". 
+VT:	10. Sistem vraća korisnika na stranicu oglasa.
+
+
+TP3: Administrator uspešno briše oglas korisnika
+Preduslov: Administrator je ulogovan na sistem.
+
+	1. Admin je ulogovan na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za registrovan admina.
+	3. Admin ulazi na jedan od oglasa.
+	4. Admin pritiska dugme "Obriši oglas".
+VT:	5. Sistem prikazuje prozor sa pitanjem za administratora da li zaista želi da obriše oglas.
+	6. Admin pritiska dugme "Obriši".
+VT:	7. Sistem prikazuje poruku "Uspešno ste obrisali oglas!" čime je oglas izbrisan.
+
+
+
+TP4: Administrator uspešno odustaje od brisanja svog oglasa
+Preduslov: Administrator je ulogovan na sistem.
+
+	1. Admin je ulogovan na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za registrovan admina.
+	3. Admin ulazi na jedan od oglasa.
+	4. Admin pritiska dugme "Obriši oglas".
+VT:	5. Sistem prikazuje prozor sa pitanjem za administratora da li zaista želi da obriše oglas.
+	6. Admin pritiska dugme "Nazad". 
+VT:	7. Sistem vraća admina na stranicu oglasa.
+
+
+
+Test funkcionalonosti promene lozinke korisnika:
+
+
+TP1: Korisnik uspešno menja svoju lozinku
+Preduslov: Korisnik je logovan na svoj nalog.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska polje "Promena lozinke".
+VT:	5. Sistem prikazuje formu za promenu lozinke.
+	6. Korisnik popunjava polja za staru, novu i potvrdu nove lozinke.
+VT:	7. Sistem izbacuje poruku "Uspešno ste promenili lozinku".	
+
+
+
+TP2: Korisnik neuspešno menja svoju lozinku zbog pogrešne stare lozinke
+Preduslov: Korisnik je logovan na svoj nalog.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska polje "Promena lozinke".
+VT:	5. Sistem prikazuje formu za promenu lozinke.
+	6. Korisnik popunjava loše polje za staru, a dobro popunjava polja za novu i potvrdu nove lozinke.
+VT:	7. Sistem izbacuje poruku "Stara lozinka je pogrešna".	
+
+
+
+TP3: Korisnik neuspešno menja svoju lozinku - polja za lozinku i potvrdu nisu identična.
+Preduslov: Korisnik je logovan na svoj nalog.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska polje "Promena lozinke".
+VT:	5. Sistem prikazuje formu za promenu lozinke.
+	6. Korisnik popunjava polje za staru, a loše popunjava polja za novu i potvrdu nove lozinke.
+VT:	7. Sistem izbacuje poruku "Polja za novu lozinku nisu identična".	
+
+
+TP4: Korisnik neuspešno menja svoju lozinku - stara lozinka identicna novoj.
+Preduslov: Korisnik je logovan na svoj nalog.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska polje "Promena lozinke".
+VT:	5. Sistem prikazuje formu za promenu lozinke.
+	6. Korisnik popunjava polje za staru, za novu i potvrdu nove lozinke popunjava istom, starom, lozinkom.
+VT:	7. Sistem izbacuje poruku "Nova lozinka ne može biti ista kao prethodna!".	
+
+
+TP5: Korisnik neuspešno menja svoju lozinku - nepopunjena polja.
+Preduslov: Korisnik je logovan na svoj nalog.
+
+	1. Korisnik je loguje na sistem sa svojim kredencijalima.
+VT:	2. Sistem prelazi na početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska polje "Promena lozinke".
+VT:	5. Sistem prikazuje formu za promenu lozinke.
+	6. Korisnik ostavlja neko od polja nepopunjena.
+VT:	7. Sistem izbacuje poruku da je neko od polja ili više njih nepopunjeno.	
+
+
+

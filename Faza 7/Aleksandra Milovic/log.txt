@@ -1,0 +1,83 @@
+Test funkcionalonosti slanja poruka
+
+TP1: Korisnik uspešno salje poruku drugom korisniku
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Korisnik se loguje na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za korisnika.
+	3. Korisnik pronalazi oglas korisnika kome želi da pošalje poruku.
+	4. Korisnik pritiska dugme pošalji poruku.
+VT:	5. Sistem prikazuje stranicu sa formom za slanje poruke.
+	6. Korisnik popunjava polje za tekst poruke.
+	7. Korisnik pritiska dugme "Pošalji".
+	8. Poruka je poslata.
+
+TP2: Korisnik neuspešno salje poruku drugom korisniku - nepopunjeno polje
+
+	1. Korisnik se loguje na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za korisnika.
+	3. Korisnik pronalazi oglas korisnika kome želi da pošalje poruku.
+	4. Korisnik pritiska dugme pošalji poruku.
+VT:	5. Sistem prikazuje stranicu sa formom za slanje poruke.
+	6. Korisnik pritiska dugme "Pošalji".
+	7. Sistem izbacuje poruku da je polje nepopunjeno.
+
+
+Test funkcionalonosti brisanja naloga
+
+TP3: Korisnik uspešno briše svoj nalog sa svim svojim oglasima
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Korisnik se loguje na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska dugme "Obriši nalog".
+VT:	5. Sistem izbacuje prozor sa pitanjem da li korisnik zaista želi da obriše nalog.
+	6. Korisnik pritiska dugme "Obriši".
+	7. Nalog je obrisan. 
+
+
+TP4: Administrator uspešno briše svoj nalog sa svim svojim oglasima
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Administrator se loguje na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za Administratora.
+	3. Administrator ulazi na neki od profila.
+	4. Administrator pritiska dugme "Obriši nalog".
+VT:	5. Sistem izbacuje prozor sa pitanjem da li administrator zaista želi da obriše nalog.
+	6. Administrator pritiska dugme "Obriši".
+	7. Nalog je obrisan. 
+
+
+TP5: Korisnik uspešno odustaje od brisanaj naloga
+Preduslov: Korisnik je ulogovan na sistem.
+
+	1. Korisnik se loguje na svoj nalog.
+VT:	2. Sistem prikazuje početnu stranicu za korisnika.
+	3. Korisnik ulazi na svoj profil.
+	4. Korisnik pritiska dugme "Obriši nalog".
+VT:	5. Sistem izbacuje prozor sa pitanjem da li korisnik zaista želi da obriše nalog.
+	6. Korisnik pritiska dugme "Nazad".
+VT:	7. Korisnik je vraćen na stranicu sa oglasom.
+
+
+
+TP6: Korisnik koristi filtriranje kategorije prilikom pretrage
+
+	1. Korisnik iz padajuce liste kategorije bira jednu od poniđenih.
+	2. Korisnik pritiska dugme "Pretraži".
+	3. Sistem izlistava sve oglase sa datom kategorijom.
+
+
+TP7: Korisnik koristi filtriranje tipovi prilikom pretrage
+
+	1. Korisnik iz padajuce liste tipovi bira jednu od poniđenih.
+	2. Korisnik pritiska dugme "Pretraži".
+	3. Sistem izlistava sve oglase sa datim tipom.
+
+
+TP8: Korisnik koristi filtriranje države prilikom pretrage
+
+	1. Korisnik iz padajuce liste kategorije bira jednu od poniđenih.
+	2. Korisnik pritiska dugme "Pretraži".
+	3. Sistem izlistava sve oglase iz date Države.

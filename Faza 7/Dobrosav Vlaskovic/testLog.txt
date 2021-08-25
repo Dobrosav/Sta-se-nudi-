@@ -1,0 +1,28 @@
+
+TP1:Ocena korisnika
+Preduslov: korisnik prijavljen
+	1. Ulogovani korisnik nađe korisnika kojeg hoce da oceni
+	2. Odabere ocenu
+	3. Pritisne dugme oceni
+vt:	4. Promeni se prosecna ocena
+
+TP2: Postavljanje oglasa-uspešno
+Preduslov: korisnik prijavljen
+	1. Korisnik uđe u svoj profil
+	2. Pritiska dugme postavi oglas
+	3. Otvara se forma za novi oglas
+	4. Korisnik unosi sve neophodne podatke
+	5. Pritiska na dugme "Postavi"
+vt:	6. Prikazuje se poruka o uspesnom postavljanju oglasa
+
+TP3: Postavljanje oglasa-neuspešno, prazna polja
+Preduslov: korisnik prijavljen
+	1. Korisnik uđe u svoj profil
+	2. Pritiska dugme postavi oglas
+	3. Pritiska na dugme "Postavi"
+vt:	4. Ostaje na istoj strani
+
+TP4: Prikaz oglasa
+Preduslov: nema
+	1. Korisnik odabere kategoriju
+vt:	2. Prikazuje se naziv kategorije i oglasi

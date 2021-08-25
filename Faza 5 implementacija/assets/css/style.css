@@ -1,0 +1,431 @@
+/*-----------Dusan | Postavljanje oglasa----------*/
+#post-upload {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#post-upload table { 
+    table-layout: fixed;  
+    padding: 50px;
+    padding-top: 10px;
+    width: 30%;    
+}
+
+#post-upload td {    
+    padding: 3px;
+}
+
+.cell-titles {
+    text-align: left;
+    padding-left: 50px;
+}
+/*----------------------------------------------*/
+
+
+
+
+
+/*-----------Dusan | Brisanje naloga----------*/
+#acc-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6%;
+}
+
+#acc-delete table {
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(166, 189, 219);
+    width: 40%;
+}
+/*---------------------------------------------*/
+
+
+/*---------Dusan | Zaboravljena lozinka--------*/
+#password-forget {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    color: rgb(40, 56, 114);
+}
+
+#password-forget table {
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(166, 189, 219);
+    width: 37%;
+}
+    
+.password-forget-td {
+    padding: 5px;
+}
+/*---------------------------------------------*/
+
+
+
+
+
+/*-----------Aleksandra | Profil korisnika----------*/
+#user-profile {
+    padding-top: 10px;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+#user-profile img {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 150px;
+    width: 150px;
+    float:left;
+}
+
+#user-profile #user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+#user-profile #user-info h1 {
+    font-size: 40px;
+    float:left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#user-profile #user-info h2 {
+    font-size: 23px;
+    float:left;
+    padding-top: 20px;
+}
+
+#user-profile #user-info h3 {
+    font-size: 17px;
+    float:left;
+    padding-top: 20px;
+}
+
+#user-profile #message-button {
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+#user-profile a:visited {
+    color: rgb(40, 56, 114);
+    text-decoration: none;
+}
+
+#user-profile a:hover {
+    color:rgb(109, 160, 226);
+}
+
+#user-profile a:active {
+    color:rgb(58, 7, 129);
+    text-decoration: none;
+}
+
+#user-profile a:link {
+    color: black;
+    text-decoration: none;
+}
+/*------------------------------------------------------*/
+
+
+
+
+/*-----------Aleksandra | Svi oglasi korisnika----------*/
+#user-ads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-ads h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/*------------------------------------------------------*/
+
+
+
+/*---------------Aleksandra | Obaveštenja---------------*/
+#announcements h1 {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+#announcements h2 {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+#announcements h3 {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+}
+
+#announcements p {
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+/*--------------------------------------------------------*/
+
+
+/*---------------Aleksandra | Slanje poruke---------------*/
+#message img {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+#message h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+#message textarea {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 500px;
+}
+
+#message #message-buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#message #message-buttons .choose-file-messages {
+    margin-right: 55px;
+}
+/*--------------------------------------------------------*/
+
+
+
+/*-----------Lazar | Podrška----------*/
+#support {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    color:rgb(40, 56, 114);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#support form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    width:250px;
+}
+
+#support a:visited {
+    color: rgb(40, 56, 114);
+}
+
+#support a:active {
+    color: rgb(40, 56, 114);
+}
+
+#support a:hover {
+    color:  rgb(40, 56, 114);
+    font-size: larger;
+}
+
+#support a:link {
+    color: rgb(40, 56, 114);
+}
+/*---------------------------------------------*/
+
+
+/*-----------Lazar | Promena lozinke----------*/
+#password-change {
+    padding-top: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    color: rgb(40, 56, 114);
+
+}
+    
+.password-change-td {
+    text-align-last: left;
+    padding: 5px;
+}
+/*---------------------------------------------*/
+
+
+
+/*-------Dobrosav | Logovanje, Registracija--------*/
+.row td {
+    text-align-last: left;
+    padding: 5px;
+}
+
+#sign-in-and-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checked {
+    color: orange;
+  }
+/*---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------Kostur-----------------------*/
+*, html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img.kategorija {
+    width: 90%;
+    height: 95%;
+}
+
+.content {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(227, 233, 243);
+}
+
+#header {
+    width: 100%;
+    background-color: rgba(40, 56, 114);
+    height: 100px;
+    font-size: 50px;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.911);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#header-caption a:visited {
+    color:rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+#header-caption a:hover {
+    color:rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+#header-caption a:active {
+    color:rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+#header-caption a:link {
+    color:rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+#menu {
+    width: 100%;
+    background-color: rgb(166, 189, 219);
+    height: 37px;    
+    /*display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;*/
+}
+
+#menu table { 
+    table-layout: fixed;  
+    padding: 50px;
+    padding-top: 10px;
+    width: 100%;    
+}
+
+#menu #menu-list {
+    height: 80%;
+    align-items: center;
+}
+
+#menu a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color:rgb(40, 56, 114);
+    font-size: larger;
+}
+
+#menu a:active {
+    color:rgb(110, 30, 220);
+    text-decoration: none;
+}
+#menu a:link {
+    color: rgb(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+#footer {
+    background-color: rgb(40, 56, 114);  
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255, 0.911);
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color:rgb(166, 189, 219);
+    font-size: larger;
+}
+
+#footer a:active {
+    color:rgb(110, 30, 220);
+    text-decoration: none;
+}
+
+#footer a:link {
+    color: rgb(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+/*-----------------------Kostur-----------------------*/
+
+
+
